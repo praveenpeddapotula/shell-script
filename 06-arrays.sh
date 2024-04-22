@@ -1,5 +1,5 @@
 #!/bin/bash
-movies=("tillu" "hanuman" "guntur karam")
+movies=("$@")
 
 echo " first movie is : ${movies[0]} "
 echo " second movie is : ${movies[1]} "
