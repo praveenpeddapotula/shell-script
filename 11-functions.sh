@@ -8,7 +8,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]
     then
     echo " $2 ..FAILURE "
-    exit1
+    exit 1
     else
     echo" $2 .. SUCCESS "
     fi
@@ -17,6 +17,7 @@ VALIDATE(){
 if [ $USERID -ne 0 ]
 then
     echo "please run the script with root access "
+    exit 1
 else
     echo "you are root user "
 fi
